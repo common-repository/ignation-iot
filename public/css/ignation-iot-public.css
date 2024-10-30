@@ -1,0 +1,144 @@
+/**
+ * All of the CSS for your public-facing functionality.
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat|Muli');
+
+ /* WIDGET FRONT-END */
+   #ignation-iot-front-container{
+     width: 100%;
+     height: auto;
+     overflow: auto;
+   }
+  .ignation-iot-front-column{
+    float: left;
+    width: 50%;
+  }
+  #ignation-iot-front-container .no_sensors{
+    text-align: center;
+  }
+
+  .ignation-connection-error{
+    margin: 20px !important;
+    text-align: center;
+    font-size: 15px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    color: #000 !important;
+  }
+
+  /* WIDGET DESCRIPTION */
+    .ignation-iot-front-description{
+      width: 100%;
+      float: left;
+      margin-bottom: 10px;
+    }
+    .ignation-iot-front-description .description{
+      margin: 0px;
+      text-align: center;
+      padding: 10px 1%;
+    }
+    #ignation-iot-front-container .timestamp{
+      font-size: 8px;
+      margin: 0px;
+      text-align: left;
+      padding-left: 1%;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+  /* END WIDGET DESCRIPTION */
+
+  /* COLUMN LEFT */
+    .ignation-iot-front-column .column-left{
+      float: left;
+      width: 75%;
+      padding: 15px 20px;
+    }
+      .ignation-iot-front-column .column-left h1{
+        margin: 0px;
+        font-size: 50px;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .ignation-iot-front-column .column-left p{
+        margin: 0px;
+        font-family: 'Muli', sans-serif;
+        font-weight: 300;
+        line-height: 20px;
+      }
+  /* END COLUMN LEFT */
+
+  /* COLUMN RIGHT */
+    .ignation-iot-front-column .column-right{
+      float: left;
+      width: 25%;
+      text-align: center;
+      padding: 22.5px 0px;
+    }
+      .ignation-iot-front-column .column-right i{
+        font-size: 60px;
+      }
+  /* END COLUMN RIGHT */
+
+
+  /* MOBILE */
+    @media screen and (max-width: 1000px) {
+      .ignation-iot-front-column{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      .ignation-iot-front-description .description{
+        padding: 10px 0;
+      }
+
+      /* PROGRESS BAR */
+        #progressBar{
+          width: 100%;
+          margin: 0;
+        }
+        #ignation-iot-front-container .timestamp{
+          width: 100%;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+      /* END PROGRESS BAR */
+    }
+
+    @media screen and (max-width: 515px) {
+      .ignation-iot-front-description .timestamp{
+        text-align: center;
+        margin-top: 10px;
+      }
+      /* COLUMN LEFT */
+        .ignation-iot-front-column .column-left h1{
+          font-size: 30px;
+        }
+      /* END COLUMN LEFT */
+
+      /* COLUMN RIGHT */
+        .ignation-iot-front-column .column-right i{
+          font-size: 40px;
+        }
+      /* END COLUMN RIGHT */
+    }
+
+    @media screen and (max-width: 375px) {
+      /* COLUMN LEFT */
+        .ignation-iot-front-column .column-left{
+            width: 65%;
+        }
+        .ignation-iot-front-column .column-left h1{
+          font-size: 30px;
+        }
+      /* END COLUMN LEFT */
+
+      /* COLUMN RIGHT */
+        .ignation-iot-front-column .column-right{
+          width: 35%;
+        }
+        .ignation-iot-front-column .column-right i{
+          font-size: 40px;
+        }
+      /* END COLUMN RIGHT */
+    }
+  /* END MOBILE */
+ /* END WIDGET FRONT-END */

@@ -1,0 +1,319 @@
+/**
+ * All of the CSS for your admin-specific functionality.
+ */
+  @import url('https://fonts.googleapis.com/css?family=Montserrat|Muli');
+
+  /* ADMIN PAGE */
+    /* BASE */
+    .wrap.ignation{
+      background-repeat: no-repeat;
+      background-size: 50px;
+      background-position: top right;
+      background-image: url('/wp-content/plugins/ignation-iot/admin/partials/images/ignation_logo.svg');
+    }
+      .wrap.ignation h2{
+        margin-bottom: 10px !important;
+      }
+
+      .wrap.ignation .hndle{
+        cursor: initial;
+      }
+
+      /* LOGO */
+        .ignation_logo{
+          width: 50px;
+          margin: 20px;
+          height: auto;
+          float: right;
+        }
+      /* END LOGO */
+
+      /* ERROR MESSAGES */
+        .settings-error.notice{
+          margin-right: 10px;
+        }
+      /* END ERROR MESSAGES */
+
+      /* POSTBOX DIV */
+        .wrap.ignation .postbox {
+          padding: 0 12px 12px;
+        }
+        .wrap.ignation .postbox .submit{
+          margin: 0px !important;
+          margin-top: 20px !important;
+          padding: 0px !important;
+        }
+        .wrap.ignation .postbox .inside{
+          margin: 0px !important;
+          padding: 0px !important;
+        }
+
+          .wrap.ignation .postbox h3{
+            font-size: 14px;
+            padding: 8px 12px 8px 0px;
+            margin: 0;
+            line-height: 1.4;
+          }
+      /* END POSTBOX DIV */
+
+      /* FORM */
+        #ignation_form .submit{
+          margin: 0px;
+        }
+      /* END FORM */
+    /* END BASE */
+
+    /* TAB 1 */
+      #module_select .form-table th,
+      #module_select .form-table td{
+        padding: 5px 5px !important;
+      }
+      .form-table th{
+        font-weight: 400;
+      }
+      .form-table td{
+        padding: 10px;
+      }
+
+      .widefat td{
+        vertical-align: inherit;
+      }
+
+      .selected_sensors thead .column-module,
+      .selected_sensors thead .column-sensor{
+        font-weight: 600 !important;
+      }
+
+      .column-delete{
+        text-align: right;
+      }
+        .column-delete a{
+          color: #a00;
+        }
+          .column-delete a:hover{
+            color: red;
+          }
+    /* END TAB 1 */
+
+    /* TAB 2 */
+      #settings-description textarea{
+        width: 100%;
+        height: 100px;
+      }
+      #settings-data-link td{
+        padding: 0px;
+      }
+      #settings-data-link input{
+        width: 100%;
+      }
+    /* END TAB 2 */
+
+    .ignation-server-error{
+      padding: 10px !important;
+    }
+  /* END ADMIN PAGE */
+
+/*-----------------------------------------------------------------------------*/
+
+  /* WIDGET */
+    /* BASE */
+      #ignation-iot-back-wrap.ignation{
+
+      }
+      #ignation-iot-back-container{
+
+      }
+    /* END BASE */
+
+    /* COLUMN */
+      .ignation-iot-back-column{
+        float: left;
+        width: 19%;
+        margin-right: 1%;
+        padding: 10px;
+      }
+    /* END COLUMN */
+
+    /* TITEL */
+      .sensor_module{
+        width: 65%;
+        float: left;
+      }
+      .sensor_module h1{
+        margin: 0px;
+      }
+    /* END TITEL */
+
+    /* POSITION */
+      .sensor_position{
+        width: 35%;
+        float: left;
+      }
+      .sensor_position select{
+        width: 100%;
+      }
+      .sensor_position_message{
+        height: 20px;
+      }
+      #sensor_position_message_nul,
+      #sensor_position_message_use{
+        color: #dc3232;
+        font-size: 10px;
+        margin: 0px;
+        text-align: right;
+      }
+    /* END POSITION */
+
+    /* LABEL */
+      .sensor_label{
+        width: 100%;
+        float: left;
+      }
+        .sensor_label input{
+          width: 100%;
+          margin-top: 5px;
+        }
+    /* END LABEL */
+
+    /* ICON */
+      .sensor_icon_picker{
+        margin-top: 10px;
+        width: 100%;
+        float: left;
+      }
+      .sensor_icon_picker .icon-picker-container{
+        z-index: 100;
+      }
+      .sensor_icon_picker .icon-picker{
+        width: 100% !important;
+      }
+
+      /* ICON PICKER */
+        .icon-picker-container {
+        	position: absolute;
+        	width: 100%;
+        	height: 100%;
+        	font-size: 14px;
+          background-color: #fff;
+          padding: 0px 10px 10px 10px;
+        	overflow: scroll;
+        	box-sizing: border-box;
+        }
+
+        	.icon-picker-container ul {
+        		margin: 0;
+        		padding: 0;
+        		margin-bottom: 10px;
+            margin-top: 58px;
+        	}
+
+        		.icon-picker-container ul li a span {
+        			width: 20px;
+        			height: 20px;
+        			font-size: 20px;
+        			display: block;
+        			text-align: center;
+        		}
+
+        		.icon-picker-container ul li {
+        			display: inline-block;
+        			margin: 5px;
+        			float: left;
+        		}
+
+        			.icon-picker-container ul li a {
+        				display: block;
+        				text-decoration: none;
+        				color:#373737;
+        				padding: 6px 10px;
+        				border: 1px solid #eee;
+        			}
+
+        				.icon-picker-container ul li a:hover {
+        					border-color:#999;
+        					background: #efefef;
+        				}
+
+        	.icon-picker-control {
+            position: fixed;
+            text-align: center;
+            background-color: #fff;
+            margin-left: -10px;
+            padding: 10px;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+        	}
+
+        		.icon-picker-control a {
+        			padding:5px;
+        			text-decoration: none;
+        			line-height: 32px;
+        			width:25px;
+        		}
+
+        			.icon-picker-control a span {
+        				display: inline;
+        				vertical-align: middle;
+        			}
+
+        		.icon-picker-control input {
+        			width: 50%;
+              text-align: center;
+              height: 30px;
+        		}
+        		.icon-picker-control p {
+        			text-align: center;
+        			margin: 0;
+        			padding: 2px;
+        		}
+        		.icon-picker-control select {
+        			margin: 0 auto;
+        			display: inline-block;
+        			width: auto;
+        		}
+          .icon-picker-close {
+            float: left;
+            font-size: 30px !important;
+            width: 30px;
+            height: 30px;
+            padding-top: 3px;
+          }
+          .icon-picker-close:hover {
+            color: #696969;
+            cursor: pointer;
+          }
+
+        	/* DIV Button with Preview */
+        	div.button.icon-picker {
+        		font-size: 24px;
+        		height: 45px;
+        		width: 45px;
+        		margin: 0;
+        		padding: 0;
+        		line-height: 45px;
+        		text-align: center;
+        	}
+      /* END ICON PICKER */
+    /* END ICON */
+
+    /* COLOR */
+      .sensor_color_picker{
+        margin-top: 10px;
+        width: 100%;
+        float: left;
+      }
+      .sensor_color_picker .wp-picker-holder{
+        position: absolute;
+      }
+    /* END COLOR */
+
+    /* INCORRECT SETTINGS WIDGET -> MENU */
+      .so-title-bar .so-close.so-disabled{
+        cursor: default;
+        pointer-events: none;
+      }
+      .so-title-bar .so-close.so-disabled .so-dialog-icon{
+        color: #dddddd;
+      }
+    /* END INCORRECT SETTINGS WIDGET -> MENU */
+  /* END WIDGET */
